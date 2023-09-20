@@ -4,31 +4,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+
+    <title>Verificar Palíndromo</title>
 </head>
 <body>
-  <form id="meuFormulario">
-    <label for="nome">Palavra:</label>
-    <input type="text" id="palavra"><br>
-
-
-
-    <button type="button" onclick="mostrarPalavra()">Mostrar Palavra</button>
-  </form>
-
-  <p id="resultado"></p>
-
-  <script>
-    function mostrarPalavra() {
-
-      const palavra = document.getElementById("palavra").value;
-      
-
-      const resultado = 'Palavra: ' + palavra;
-
-
-      document.getElementById("resultado").textContent = resultado;
-    }
-  </script>
+    <h1>Verificar Palíndromo</h1>
+    <form action="verificarPalindromo.jsp" method="post">
+        <label for="palavra">Digite uma palavra:</label>
+        <input type="text" id="palavra" name="palavra">
+        <input type="submit" value="Verificar">
+    </form>
 </body>
+</html>
 </html>
